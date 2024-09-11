@@ -1,0 +1,120 @@
+//HTML
+
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="login.js"></script>
+</head>
+<body background="images/livros1.PNG">
+    <header>
+        <h1>Login</h1>
+    </header>
+    <main>
+        <form id="form-login">
+            <input placeholder="Email" type="text" id="Email" name="email"><br><br>
+
+            <input placeholder="Senha" type="password" id="senha" name="senha"><br><br>
+            <input type="submit" value="Entrar">
+
+            <a href="recuperar-senha.html">Esqueceu a senha?</a>
+
+            <a href="">Criar conta</a>
+        </form>
+    </main>
+</body>
+</html>
+
+
+//CSS
+
+
+/* index.css */
+
+/* Estilizar o formulário de login */
+#form-login {
+    max-width: 250px;
+    min-height: 140px;
+    margin: 25px auto;
+    padding: 40px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Estilizar os campos de entrada */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 65%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-width: 0px 0px 3px 0px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ccc;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+  
+  input[type="submit"] {
+    width: 75%;
+    height: 45px;
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #000000;
+  }
+
+  a{
+    color: #ccc;
+    text-decoration: underline;
+    padding: 15px;
+  }
+
+  a:hover {
+    color: #fdfdfd;
+  }
+  
+  a:active {
+    color: #ffffff;
+  }
+  
+  a:visited {
+    color: #b1b1b1;
+  }
+  
+  /* Estilizar o cabeçalho e rodapé */
+  header{
+    padding: 10px;
+    text-align:center;
+    color: #fcfcfc;
+    background: none;
+  }
+  
+  header {
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Estilizar a mensagem de erro */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
